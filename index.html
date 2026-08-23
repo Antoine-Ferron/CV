@@ -1,254 +1,1023 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antoine Ferron - Développeur informatique</title>
+    <title>Antoine Ferron | Développeur Full-Stack | Rennes, Bretagne</title>
+
+    <!-- Meta SEO & GEO Avancé -->
     <meta name="description"
-          content="Antoine Ferron, développeur informatique Java - PHP. Découvrez ses compétences, expériences et formations.">
-    <meta name="google-site-verification" content="c2gLXZP7xpLUbFsa4cqss5xXBqK_IW3vgUxRyboxmkE" />
+        content="Portfolio d'Antoine Ferron, développeur web Full-Stack basé à Rennes (Bretagne). Découvrez mon parcours atypique, de la pâtisserie à l'ingénierie logicielle, mes projets et mes compétences techniques (Java, PHP, Symfony, Spring Boot).">
+    <meta name="keywords"
+        content="Antoine Ferron, Développeur Web, Développeur Full-Stack, Rennes, Bretagne, Ille-et-Vilaine, Java, Spring Boot, Angular, TypeScript, AWS, WebSocket, MySQL, Portfolio">
+    <meta name="author" content="Antoine Ferron">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
-    <meta property="og:title" content="Antoine Ferron - Développeur">
-    <meta property="og:description" content="Antoine Ferron, développeur informatique Java - PHP. Découvrez ses compétences, expériences et formations.">
-    <meta property="og:image" content="https://antoine-ferron.fr/antoine-ferron-developpeur.webp">
-    <meta property="og:url" content="https://antoine-ferron.fr">
-    <meta property="og:type" content="website">
+    <!-- Geo-Tags pour le référencement local -->
+    <meta name="geo.region" content="FR-BRE">
+    <meta name="geo.placename" content="Rennes">
+    <meta name="geo.position" content="48.117266;-1.677793">
+    <meta name="ICBM" content="48.117266, -1.677793">
+
+    <!-- Open Graph (Réseaux Sociaux) -->
+    <meta property="og:title" content="Antoine Ferron | Développeur Full-Stack à Rennes">
+    <meta property="og:description"
+        content="De l'artisanat pâtissier à l'ingénierie logicielle. Découvrez le portfolio d'Antoine Ferron, développeur Full-Stack en Bretagne.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://antoine-ferron.github.io/CV/">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="Antoine Ferron - Développeur informatique">
+    <!-- Voir la note : LinkedIn privilegie le JPG/PNG en 1200x630 -->
+    <meta property="og:image" content="https://antoine-ferron.github.io/CV/antoine-ferron-developpeur.webp">
+    <meta property="og:image:alt" content="Portrait d'Antoine Ferron, developpeur Full-Stack a Rennes">
+    <meta property="og:site_name" content="Antoine Ferron">
+    <meta property="profile:first_name" content="Antoine">
+    <meta property="profile:last_name" content="Ferron">
 
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Antoine Ferron | Developpeur Full-Stack a Rennes">
+    <meta name="twitter:description"
+        content="De l'artisanat patissier a l'ingenierie logicielle. Portfolio d'Antoine Ferron, developpeur Full-Stack en Bretagne.">
+    <meta name="twitter:image" content="https://antoine-ferron.github.io/CV/antoine-ferron-developpeur.webp">
+
+    <!-- Canonical & favicon -->
+    <link rel="canonical" href="https://antoine-ferron.github.io/CV/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#050810">
+
+    <!-- Données structurées JSON-LD (SEO Avancé Google) -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Antoine Ferron",
+      "givenName": "Antoine",
+      "familyName": "Ferron",
+      "jobTitle": "Développeur Full-Stack",
+      "url": "https://antoine-ferron.github.io/CV/",
+      "email": "antoine.ferron2023@campus-eni.fr",
+      "image": "https://antoine-ferron.github.io/CV/antoine-ferron-developpeur.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/VOTRE-PROFIL",
+        "https://github.com/Antoine-Ferron"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rennes",
+        "addressRegion": "Bretagne",
+        "addressCountry": "FR"
+      },
+      "alumniOf": [
         {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Antoine Ferron - Développeur Web et Mobile",
-            "description": "Antoine Ferron, développeur informatique Java - PHP. Découvrez ses compétences, expériences et formations.",
-            "image": "https://antoine-ferron.fr/antoine-ferron-developpeur.webp",
-            "url": "https://antoine-ferron.fr"
+          "@type": "EducationalOrganization",
+          "name": "Sup de Vinci - Rennes"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "ENI Ecole d'Informatique"
+        }
+      ],
+      "knowsAbout": ["Java", "Spring Boot", "Angular", "TypeScript", "AWS", "WebSocket", "MySQL", "C++", "MFC", "PHP", "Symfony", "Développement Web", "Full-Stack"],
+      "description": "Développeur Full-Stack basé à Rennes, passionné par la conception logicielle et fort d'un parcours atypique alliant rigueur artisanale et ingénierie technique."
+    }
+    </script>
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;family=Outfit:wght@300;400;500;700;800;display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#0a101f',
+                            900: '#050810',
+                        },
+                        primary: {
+                            300: '#93c5fd', // Blue
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            400: '#34d399', // Emerald
+                            900: '#064e3b',
+                        }
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                        'fade-in': 'fade-in 0.8s ease-out both',
+                    },
+                    keyframes: {
+                        'fade-in': {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        }
+                    }
+                }
+            }
         }
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Julius+Sans+One&display=swap"
-          rel="stylesheet">
+    <style>
+        /* Base personnalisée */
+        body {
+            background-color: #050810;
+            color: #94a3b8;
+        }
 
-    <link rel="stylesheet" href="./styles.css">
+        /* Scrollbar élégante */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050810;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+
+        /* Focus visible au clavier */
+        :focus-visible {
+            outline: 2px solid #60a5fa;
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        /* Lien d'evitement */
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: -100px;
+            z-index: 100;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            background: #2563eb;
+            color: #fff;
+            font-weight: 600;
+            transition: top 0.2s ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+        }
+
+        /* Effets de survol et cartes */
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Transitions ciblees : evite que .reveal (all 0.8s) n'ecrase .card-hover */
+        .card-hover {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Specificite renforcee : sinon .reveal.active (0-2-0) annule le translateY */
+        .card-hover:hover,
+        .reveal.active.card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        /* Animations au scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1),
+                transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Le hover d'une carte revelee ne doit pas heriter du delai d'apparition */
+        .reveal.active.card-hover {
+            transition-delay: 0ms;
+        }
+
+        /* Timeline : geometrie pilotee par variables
+           --tl-axis      : position du centre de l'axe vertical
+           --tl-anchor    : hauteur du centre du point = centre de la ligne de l'annee
+           --tl-gap       : espace entre l'axe et le texte
+           --tl-space     : espace vertical entre deux etapes (= space-y-10) */
+        .timeline {
+            --tl-axis: 6px;
+            --tl-anchor: 0.5rem;
+            --tl-dot: 12px;
+            --tl-gap: 28px;
+            --tl-space: 2.5rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: calc(var(--tl-axis) + var(--tl-gap));
+        }
+
+        /* Chaque etape trace le segment qui la relie a la suivante :
+           l'axe demarre donc exactement au 1er point et s'arrete au dernier. */
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: var(--tl-axis);
+            top: var(--tl-anchor);
+            bottom: calc(-1 * (var(--tl-space) + var(--tl-anchor)));
+            width: 1px;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item:last-child::before {
+            content: none;
+        }
+
+        /* Le point est centre sur l'axe (X) et sur la ligne de l'annee (Y) */
+        .timeline-dot {
+            position: absolute;
+            left: var(--tl-axis);
+            top: var(--tl-anchor);
+            width: var(--tl-dot);
+            height: var(--tl-dot);
+            transform: translate(-50%, -50%);
+            border-radius: 9999px;
+        }
+
+        /* Background Glow dynamique */
+        .glow-bg {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(5, 8, 16, 0) 70%);
+            top: -200px;
+            right: -100px;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Respect des preferences systeme */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .reveal {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+
+            .card-hover:hover,
+            .reveal.active.card-hover:hover {
+                transform: none;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+
+    <!-- Sans JS, le contenu doit rester visible -->
+    <noscript>
+        <style>
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
 </head>
-<body>
-<header>
-    <section>
-        <img src="./antoine-ferron-developpeur.webp" alt="Photo de Antoine Ferron" width="133" height="200">
-        <div>
-            <h1>Antoine Ferron</h1>
-            <h2>Développeur Informatique</h2>
+
+<body class="antialiased overflow-x-hidden selection:bg-primary-500 selection:text-white">
+
+    <a href="#accueil" class="skip-link">Aller au contenu principal</a>
+
+    <header class="fixed w-full top-0 z-50 glass-panel border-b border-white/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="font-display text-2xl font-bold text-white tracking-wide flex items-center gap-2">
+                    <span
+                        class="w-8 h-8 rounded bg-gradient-to-br from-primary-500 to-secondary-400 flex items-center justify-center text-sm">
+                        AF
+                    </span>
+                    <span class="hidden sm:block">Antoine Ferron</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8" aria-label="Navigation principale">
+                    <a href="#parcours"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Parcours</a>
+                    <a href="#competences"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Compétences</a>
+                    <a href="#projets"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Projets</a>
+                </nav>
+
+                <!-- Liens Sociaux -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-400 hover:text-primary-400 transition-colors flex items-center"
+                        aria-label="LinkedIn">
+                        <svg class="w-[18px] h-[18px]" viewBox="0 0 448 512" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Antoine-Ferron" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-400 hover:text-white transition-colors flex items-center" aria-label="GitHub">
+                        <svg class="w-5 h-5" viewBox="0 0 496 512" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2"
+                    aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i aria-hidden="true" class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
-    </section>
-    <section>
-        <h2>Informations Personnelles</h2>
-        <ul>
-            <li><strong>Âge :</strong> 34 ans</li>
-            <li><strong>Permis de conduire</strong></li>
-            <li><strong>Email :</strong> <a href="mailto:antoine.ferron2023@campus-eni.fr">antoine.ferron2023@campus-eni.fr</a>
-            </li>
-            <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/antoine-ferron6">Antoine Ferron</a>
-            </li>
-        </ul>
-    </section>
-</header>
-<main>
-    <section>
-        <section>
-            <h2>Objectif</h2>
-            <p>Je recherche une entreprise pour poursuivre mes études en <strong>Mastère Développement Full-Stack</strong></p>
-            <p>Disponible : <strong>septembre 2025.</strong></p>
-            <p>Durée : <strong>2 ans</strong></p>
-            <p>École : <strong>Sup de Vinci - Rennes</strong></p>
-        </section>
-        <hr>
-        <section>
-            <h2>Expériences</h2>
-            <article>
-                <h3>Stagiaire Développement Web - AFRODOMDEV</h3>
-                <p><em>Avril 2024 à mai 2024</em></p>
-                <ul>
-                    <li><strong>Réalisation du site e-commerce "Spicy-Shot"</strong></li>
-                    <li>Conception d'interfaces utilisateurs avec <strong>Figma</strong>.</li>
-                    <li>Développement de la partie back et front à l’aide de <strong>Symfony 6.4</strong>,
-                        <strong>Twig</strong>, <strong>Tailwind</strong>, <strong>JavaScript</strong>,
-                        internationalisation,
-                        tests unitaires.
-                    </li>
-                    <li>Utilisation d’une base de données <strong>MariaDB</strong> et de l’ORM <strong>Doctrine</strong>.
-                    </li>
-                    <li>Développement dans un environnement <strong>Linux</strong> et <strong>Docker</strong> et les outils <strong>Composer</strong>, <strong>Yarn</strong>,
-                        <strong>WebPack Encore</strong>, <strong>GitHub</strong>, <strong>PhpStorm</strong>.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Projets Informatiques - ENI Ecole d'Informatique</h3>
-                <p><em>Octobre 2023 à avril 2024</em></p>
-                <ul>
-                    <li><p><strong>Projet “NullPointerException”</strong> (en équipe)</p>
-                        - Site d’enchères réalisé avec <strong>Java Spring Boot</strong> et <strong>SQL Server</strong> : application web organisée en couches.
-                    </li>
-                    <li><p><strong>Projet “Sortir.com”</strong> (en équipe)</p>
-                        - Site d’organisation d’événements avec <strong>PHP Symfony</strong>, <strong>Doctrine</strong> et <strong>MySQL</strong>
-                    </li>
-                    <li><p><strong>Projet “Brain Pop!”</strong></p>
-                        - Un jeu de Memory avec <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Pâtissier - Diverses entreprises</h3>
-                <p><em>Juillet 2008 à janvier 2023</em></p>
-            </article>
-        </section>
-    </section>
 
-    <section>
-        <h2>Compétences</h2>
-        <article>
-            <h3>Langages</h3>
-            <ol>
-                <li><strong>Java</strong></li>
-                <li><strong>PHP</strong></li>
-                <li><strong>SQL</strong></li>
-                <li><strong>HTML5</strong></li>
-                <li><strong>CSS3</strong></li>
-                <li><strong>JavaScript</strong></li>
-            </ol>
-        </article>
-        <hr>
-        <article>
-            <h3>Environnements</h3>
-            <ol>
-                <li><strong>IntelliJ</strong></li>
-                <li><strong>PhpStorm</strong></li>
-                <li><strong>WebStorm</strong></li>
-                <li><strong>GitHub</strong></li>
-                <li><strong>Docker</strong></li>
-            </ol>
-        </article>
-        <hr>
-        <article>
-            <h3>Library/Framework</h3>
-            <ol>
-                <li><strong>SpringBoot</strong></li>
-                <li><strong>Symfony</strong></li>
-                <li><strong>Angular</strong></li>
-                <li><strong>Express.js</strong></li>
-                <li><strong>Bootstrap</strong></li>
-                <li><strong>Tailwind</strong></li>
-            </ol>
-        </article>
-        <hr>
-        <article>
-            <h3>ORM</h3>
-            <ol>
-                <li><strong>Doctrine</strong></li>
-            </ol>
-        </article>
-        <hr>
-        <article>
-            <h3>Méthodes</h3>
-            <ol>
-                <li><strong>Agile</strong></li>
-                <li><strong>UML</strong></li>
-                <li><strong>MVC</strong></li>
-                <li><strong>Développement en couches</strong></li>
-            </ol>
-        </article>
-        <hr>
-        <article>
-            <h3>Bases de Données</h3>
-            <ol>
-                <li><strong>SQL Server</strong></li>
-                <li><strong>MySQL</strong></li>
-                <li><strong>MongoDB</strong></li>
-            </ol>
-        </article>
-    </section>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-white/5 absolute w-full"
+            aria-label="Navigation mobile">
+            <div class="px-6 py-4 space-y-4 shadow-2xl">
+                <a href="#parcours"
+                    class="block text-base font-medium text-slate-300 hover:text-white mobile-link">Parcours</a>
+                <a href="#competences"
+                    class="block text-base font-medium text-slate-300 hover:text-white mobile-link">Compétences</a>
+                <a href="#projets"
+                    class="block text-base font-medium text-slate-300 hover:text-white mobile-link">Projets</a>
+                <div class="pt-4 border-t border-white/5 flex gap-4">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-400 hover:text-primary-400 mobile-link flex items-center"
+                        aria-label="LinkedIn"><svg class="w-6 h-6" viewBox="0 0 448 512" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg></a>
+                    <a href="https://github.com/Antoine-Ferron" target="_blank" rel="noopener noreferrer"
+                        class="text-slate-400 hover:text-white mobile-link flex items-center" aria-label="GitHub"><svg
+                            class="w-[26px] h-[26px]" viewBox="0 0 496 512" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <section>
-        <section>
-            <h2>Qualités Professionnelles</h2>
-            <ul>
-                <li><strong>Constance</strong> :<br>
-                    Capacité à travailler régulièrement + de 35h en fournissant la
-                    même qualité de travail dans des conditions souvent difficiles : travail au chaud/froid, station
-                    debout, piétinement…
-                </li>
-                <li><strong>Collaboration</strong> :<br>
-                    Collaboration avec les différents acteurs de l'entreprise et fournisseurs pour évaluer les besoins, gérer les stocks, et optimiser l'organisation collective. Déterminer les tâches de chacun au sein de l'équipe en pâtisserie.</li>
-                <li><strong>Agilité </strong> :<br>
-                    S’adapter aux changements au sein de l'équipe et aux besoins de l'entreprise et des clients, en ajustant sa méthode de travail et en réorganisant la production (commande client de dernière minute, fêtes…).</li>
-                <li><strong>Curiosité professionnelle</strong> :<br>
-                    Grand intérêt pour la veille technologique, avec le suivi de différents médias pour se tenir informé des dernières techniques et modes. Mettre en application ses nouveaux acquis et les transmettre au reste de l'équipe.
-                </li>
-                <li><strong>Inventivité</strong> : <br>
-                    Participer activement à l’évolution de l'entreprise en proposant des idées novatrices qui ont amené à la création de nouveaux produits (éclair 100% fruits, Paris-Brest croustillant, Crookie).
-                </li>
-                <li>
-                    Ces qualités m'ont permis par exemple d’être sélectionné pour participer à <strong>"La Meilleure Boulangerie"</strong> sur M6 en 2017 (finale nationale), ou de prendre les responsabilités de l'<strong>adjoint au chef de rayon</strong> à Intermarché.
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section>
-            <h2>Formation</h2>
-            <article>
-                <h3>Développeur Web et Web Mobile - ENI Ecole d'Informatique</h3>
-                <p><em>Octobre 2023 à avril 2024</em></p>
-                <ul>
-                    <li>Préparation au titre « Développeur Web et Web Mobile » homologué par l’État, niveau 5 (Bac +2)
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Auto-formation - Home Sweet Home!</h3>
-                <p><em>Janvier 2023 à octobre 2023</em></p>
-                <ul>
-                    <li>
-                        <p>
-                            Apprentissage du développement web : <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>
+    <main>
+        <section id="accueil"
+            class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden min-h-screen flex items-center">
+            <div class="glow-bg"></div>
+            <div
+                class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-800 to-transparent">
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                    <div class="lg:col-span-7">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-sm animate-fade-in">
+                            <i aria-hidden="true" class="fas fa-map-marker-alt text-secondary-400 text-sm"></i>
+                            <span class="text-xs font-medium text-slate-300 uppercase tracking-wider">Basé à Rennes,
+                                Bretagne</span>
+                        </div>
+
+                        <h1
+                            class="font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                            Concevoir le web, <br>
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400 animate-gradient-x">avec
+                                précision.</span>
+                        </h1>
+
+                        <p class="text-lg sm:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
+                            Je suis <strong>Antoine Ferron</strong>, Développeur Full-Stack. Fort de 15 ans d'exigence
+                            dans l'artisanat pâtissier, j'applique aujourd'hui cette même rigueur à l'ingénierie
+                            logicielle pour créer des applications robustes et performantes.
                         </p>
-                        -<em>OpenClassRoom</em>, <em>freeCodeCamp</em>, <em>Udemy</em>, <em>CodingGame</em>, <em>CodeWar</em>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Bac Pro Cuisine - Lycée Hôtelier de Dinard</h3>
-                <p><em>Septembre 2006 à juin 2008</em></p>
-                <ul>
-                    <li>Apprentissage du métier de cuisinier.</li>
-                </ul>
-            </article>
 
-            <article>
-                <h3>BTM Pâtissier - CFA Ker Lann</h3>
-                <p><em>Juillet 2012 à septembre 2014</em></p>
-                <ul>
-                    <li>Apprentissage du métier de pâtissier.</li>
-                </ul>
-            </article>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#projets"
+                                class="px-8 py-4 rounded-lg bg-primary-600 hover:bg-primary-500 text-white font-medium text-center transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+                                <span>Découvrir mes projets</span>
+                                <i aria-hidden="true" class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                            <a href="#parcours"
+                                class="px-8 py-4 rounded-lg bg-white/5 border border-white/10 text-white font-medium text-center hover:bg-white/10 transition-all">
+                                Mon parcours
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portrait -->
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end order-first lg:order-last">
+                        <div class="relative">
+                            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary-500/20 to-secondary-400/10 blur-2xl"
+                                aria-hidden="true"></div>
+                            <img src="antoine-ferron-developpeur.webp"
+                                alt="Antoine Ferron, développeur Full-Stack à Rennes" width="420" height="420"
+                                fetchpriority="high" decoding="async"
+                                class="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-full lg:max-w-sm aspect-square object-cover rounded-2xl border border-white/10 shadow-2xl shadow-primary-900/40">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <hr>
-        <section>
-            <h2>Langue</h2>
-            <p><strong>Anglais :</strong> Niveau B1</p>
+
+        <section id="parcours" class="py-24 relative border-b border-white/5" aria-labelledby="parcours-titre">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="reveal mb-16">
+                    <h2 id="parcours-titre" class="font-display text-3xl md:text-4xl font-bold text-white mb-4">La
+                        Recette d'une <span class="text-primary-400">Reconversion</span></h2>
+                    <p class="text-slate-400 max-w-2xl text-lg">Un parcours atypique qui allie l'exigence du monde de
+                        l'artisanat aux défis de l'ingénierie technique.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Texte présentation -->
+                    <div class="lg:col-span-5 reveal space-y-6 text-slate-400 text-base leading-relaxed">
+                        <p>
+                            Pendant 15 ans, j'ai exercé avec passion le métier d'artisan pâtissier. Cette carrière
+                            exigeante m'a forgé un caractère résilient et m'a appris la gestion du stress, la précision
+                            au gramme près, et l'importance cruciale du travail en équipe. En 2017, cette exigence m'a
+                            conduit jusqu'en finale nationale de l'émission <em>"La Meilleure Boulangerie"</em> sur M6.
+                        </p>
+                        <p>
+                            Aujourd'hui, j'ai troqué le fouet pour le clavier. Le développement logiciel sollicite mon
+                            goût pour la conception, la minutie et l'inventivité d'une nouvelle manière. Que ce soit
+                            pour structurer une base de données complexe ou créer une interface fluide, j'aborde le code
+                            avec le même souci du détail qu'une création pâtissière.
+                        </p>
+                        <div class="pt-6 border-t border-white/10">
+                            <h3 class="font-display text-white font-semibold mb-4 text-lg">Qualités transférées</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded bg-primary-900/50 flex items-center justify-center text-primary-400">
+                                        <i aria-hidden="true" class="fas fa-gem"></i></div>
+                                    <span class="text-slate-300">Constance & Résilience (production continue)</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded bg-secondary-900/50 flex items-center justify-center text-secondary-400">
+                                        <i aria-hidden="true" class="fas fa-lightbulb"></i></div>
+                                    <span class="text-slate-300">Inventivité & Résolution de problèmes</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div
+                                        class="w-8 h-8 rounded bg-purple-900/50 flex items-center justify-center text-purple-400">
+                                        <i aria-hidden="true" class="fas fa-sync-alt"></i></div>
+                                    <span class="text-slate-300">Agilité & Adaptation rapide</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="lg:col-span-7 reveal">
+                        <div class="glass-panel p-8 rounded-2xl relative">
+                            <div class="timeline space-y-10">
+                                <!-- Étape JirAWS -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-primary-500 shadow-[0_0_10px_rgba(59,130,246,0.8)]">
+                                    </div>
+                                    <span
+                                        class="text-xs font-semibold tracking-wider text-primary-400 uppercase mb-1 block">Septembre
+                                        2025 - Présent</span>
+                                    <h3 class="font-display text-xl font-bold text-white">Développeur Full-Stack
+                                        (Alternance)</h3>
+                                    <p class="text-sm text-slate-400 font-medium mb-2">JirAWS Learning / Sup de Vinci -
+                                        Rennes</p>
+                                    <p class="text-slate-400 text-sm">Conception et développement de la plateforme LMS
+                                        "Sapience" orientée coaching premium. Utilisation quotidienne de l'écosystème
+                                        Java/Spring Boot, Angular et AWS. Préparation du <strong>Mastère Développement
+                                            Full Stack</strong> (Titre RNCP de niveau 7 : <em>Expert en développement et
+                                            déploiement des solutions numériques sécurisées</em>).</p>
+                                </div>
+
+                                <!-- Étape TotalEnergies -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-slate-400"></div>
+                                    <span
+                                        class="text-xs font-semibold tracking-wider text-slate-500 uppercase mb-1 block">Octobre
+                                        2024 - Septembre 2025</span>
+                                    <h3 class="font-display text-xl font-bold text-white">Développeur Logiciel C++
+                                        (Alternance)</h3>
+                                    <p class="text-sm text-slate-400 font-medium mb-2">TotalEnergies / Sup de Vinci -
+                                        Rennes</p>
+                                    <p class="text-slate-400 text-sm">Développement, évolution et maintenance du
+                                        logiciel de simulation thermodynamique "Best". Programmation logicielle en C++
+                                        et conception d'interfaces avec MFC. Préparation et obtention du
+                                        <strong>Bachelor Spécialité Développement Informatique</strong> (Titre RNCP de
+                                        niveau 6 : <em>Coordinateur de projets informatiques</em>).</p>
+                                </div>
+
+                                <!-- Étape AFRODOMDEV -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-slate-500"></div>
+                                    <span
+                                        class="text-xs font-semibold tracking-wider text-slate-400 uppercase mb-1 block">Avril
+                                        2024 - Mai 2024</span>
+                                    <h3 class="font-display text-xl font-bold text-slate-300">Développeur Web (Stage)
+                                    </h3>
+                                    <p class="text-sm text-slate-400 font-medium mb-2">AFRODOMDEV</p>
+                                    <p class="text-slate-400 text-sm">Réalisation du site e-commerce "Spicy-Shot".
+                                        Développement Full-stack (Symfony, React), intégration multilingue et
+                                        déploiement Docker.</p>
+                                </div>
+
+                                <!-- Étape ENI -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-slate-500"></div>
+                                    <span
+                                        class="text-xs font-semibold tracking-wider text-slate-400 uppercase mb-1 block">2023
+                                        - 2024</span>
+                                    <h3 class="font-display text-xl font-bold text-slate-300">Concepteur Développeur Web
+                                    </h3>
+                                    <p class="text-sm text-slate-400 font-medium mb-2">ENI Ecole d'Informatique</p>
+                                    <p class="text-slate-400 text-sm">Formation intensive au développement Java et PHP,
+                                        architecture MVC et gestion de bases de données relationnelles.</p>
+                                </div>
+
+                                <!-- Étape Artisanat -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot bg-slate-600"></div>
+                                    <span
+                                        class="text-xs font-semibold tracking-wider text-slate-400 uppercase mb-1 block">2008
+                                        - 2023</span>
+                                    <h3 class="font-display text-xl font-bold text-slate-400">Artisan Pâtissier</h3>
+                                    <p class="text-sm text-slate-400 font-medium mb-2">Artisanat / Grande Distribution
+                                    </p>
+                                    <p class="text-slate-400 text-sm">15 années d'expertise, gestion d'équipe (Adjoint
+                                        chef de rayon), création de recettes innovantes et finale nationale sur M6.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <hr>
-        <section>
-            <h2>Centres d'intérêt</h2>
-            <ul>
-                <li><strong>Cinéma :</strong> Science-fiction, Comédie, Horreur, Anime, Séries</li>
-                <li><strong>Lectures :</strong> Science-fiction, Heroic Fantasy</li>
-                <li><strong>Jeux Vidéo :</strong> RPG, Stratégie, Gestion</li>
-            </ul>
+
+        <section id="competences" class="py-24 bg-navy-800 border-b border-white/5 relative"
+            aria-labelledby="competences-titre">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center reveal mb-16">
+                    <h2 id="competences-titre" class="font-display text-3xl md:text-4xl font-bold text-white mb-4">Stack
+                        <span class="text-primary-400">Technique</span></h2>
+                    <p class="text-slate-400 max-w-2xl mx-auto text-lg">Maîtrise des environnements back-end robustes et
+                        conception d'interfaces dynamiques.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Stack Quotidienne -->
+                    <div
+                        class="glass-panel rounded-2xl p-8 card-hover reveal border border-primary-500/20 bg-primary-900/10 shadow-[0_0_30px_rgba(37,99,235,0.05)]">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500/20 to-primary-600/5 flex items-center justify-center text-primary-400 border border-primary-500/20">
+                                <i aria-hidden="true" class="fas fa-fire text-xl"></i>
+                            </div>
+                            <h3 class="font-display text-2xl font-bold text-white">Stack Quotidienne</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">Technologies que je pratique tous les jours et sur
+                            lesquelles j'ai ma plus forte expertise aujourd'hui.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">Java</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">Spring
+                                Boot</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">TypeScript</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">Angular</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">MySQL</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">AWS</span>
+                            <span
+                                class="px-4 py-2 bg-primary-500/10 border border-primary-500/30 text-primary-300 text-sm rounded-lg font-semibold shadow-[0_0_10px_rgba(37,99,235,0.1)]">WebSocket</span>
+                        </div>
+                    </div>
+
+                    <!-- Déjà pratiqué -->
+                    <div class="glass-panel rounded-2xl p-8 card-hover reveal" style="transition-delay: 100ms;">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-500/20 to-slate-600/5 flex items-center justify-center text-slate-400 border border-slate-500/20">
+                                <i aria-hidden="true" class="fas fa-layer-group text-xl"></i>
+                            </div>
+                            <h3 class="font-display text-2xl font-bold text-white">Autres compétences</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">Technologies et outils pratiqués sur d'autres projets
+                            professionnels ou académiques.</p>
+
+                        <div class="space-y-5">
+                            <div>
+                                <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Back-End
+                                    &Logiciel</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">C++</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">MFC</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">PHP</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Symfony</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Node.js</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">SQL
+                                        Server</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">MongoDB</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Front-End
+                                </h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">JavaScript
+                                        (ES6+)</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">React</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Tailwind
+                                        CSS</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">HTML5/CSS3</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">DevOps &
+                                    Outils</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Docker</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Git
+                                        / GitHub</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 border border-white/10 text-slate-300 text-xs rounded-md">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-    </section>
-</main>
+
+        <section id="projets" class="py-24 relative" aria-labelledby="projets-titre">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="reveal mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div>
+                        <h2 id="projets-titre" class="font-display text-3xl md:text-4xl font-bold text-white mb-4">
+                            Projets <span class="text-primary-400">Récents</span></h2>
+                        <p class="text-slate-400 max-w-xl text-lg">Une sélection d'applications métiers, E-commerce et
+                            outils internes illustrant mon spectre technique.</p>
+                    </div>
+                    <a href="https://github.com/Antoine-Ferron" target="_blank" rel="noopener noreferrer"
+                        class="text-sm font-medium text-primary-400 hover:text-primary-300 flex items-center gap-2 transition-colors">
+                        Voir mon GitHub <i aria-hidden="true" class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- Projet 1: Sapience -->
+                    <article class="glass-panel rounded-2xl overflow-hidden card-hover flex flex-col reveal">
+                        <div
+                            class="h-48 bg-slate-800 relative flex items-center justify-center overflow-hidden border-b border-white/5">
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-slate-900"></div>
+                            <div
+                                class="relative z-10 w-16 h-16 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-400">
+                                <i aria-hidden="true" class="fas fa-brain text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-display text-2xl font-bold text-white">Sapience</h3>
+                                <span
+                                    class="px-2 py-1 bg-white/5 border border-white/10 text-slate-400 text-xs rounded flex items-center gap-1">
+                                    <i aria-hidden="true" class="fas fa-building"></i> JirAWS Learning
+                                </span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Plateforme LMS (Learning Management System) fortement orientée vers le coaching premium.
+                                Conception et développement de l'application métier de bout en bout. Focus sur
+                                l'architecture cloud, la fluidité des échanges en temps réel et l'expérience
+                                utilisateur.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                                <span class="text-xs font-semibold text-primary-400">Angular</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">Spring Boot</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">AWS</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">WebSocket</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 2: Best -->
+                    <article class="glass-panel rounded-2xl overflow-hidden card-hover flex flex-col reveal"
+                        style="transition-delay: 100ms;">
+                        <div
+                            class="h-48 bg-slate-800 relative flex items-center justify-center overflow-hidden border-b border-white/5">
+                            <div class="absolute inset-0 bg-gradient-to-br from-emerald-900/50 to-slate-900"></div>
+                            <div
+                                class="relative z-10 w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
+                                <i aria-hidden="true" class="fas fa-chart-line text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-display text-2xl font-bold text-white">Best</h3>
+                                <span
+                                    class="px-2 py-1 bg-white/5 border border-white/10 text-slate-400 text-xs rounded flex items-center gap-1">
+                                    <i aria-hidden="true" class="fas fa-building"></i> TotalEnergies
+                                </span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Logiciel métier complexe dédié aux simulations en thermodynamique. Évolution et
+                                maintenance du cœur de calcul et des interfaces pour répondre aux fortes exigences
+                                scientifiques des utilisateurs internes.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                                <span class="text-xs font-semibold text-emerald-400">C++</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-emerald-400">MFC (Microsoft Foundation
+                                    Classes)</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 3: Spicy-Shot -->
+                    <article class="glass-panel rounded-2xl overflow-hidden card-hover flex flex-col reveal">
+                        <div
+                            class="h-48 bg-slate-800 relative flex items-center justify-center overflow-hidden border-b border-white/5">
+                            <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-slate-900"></div>
+                            <div
+                                class="relative z-10 w-16 h-16 rounded-full bg-indigo-500/20 border border-indigo-400/30 flex items-center justify-center text-indigo-400">
+                                <i aria-hidden="true" class="fas fa-shopping-cart text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-display text-2xl font-bold text-white">Spicy-Shot</h3>
+                                <span
+                                    class="px-2 py-1 bg-white/5 border border-white/10 text-slate-400 text-xs rounded flex items-center gap-1">
+                                    <i aria-hidden="true" class="fas fa-briefcase"></i> Pro
+                                </span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Développement complet d'une plateforme E-commerce moderne lors de mon passage chez
+                                AFRODOMDEV. Gestion de l'architecture base de données, implémentation du panier,
+                                paiement sécurisé et système d'internationalisation. Déploiement conteneurisé.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                                <span class="text-xs font-semibold text-primary-400">Symfony 6</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">MariaDB</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">Tailwind</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-primary-400">Docker</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projet 4: Enchères App -->
+                    <article class="glass-panel rounded-2xl overflow-hidden card-hover flex flex-col reveal"
+                        style="transition-delay: 100ms;">
+                        <div
+                            class="h-48 bg-slate-800 relative flex items-center justify-center overflow-hidden border-b border-white/5">
+                            <div class="absolute inset-0 bg-gradient-to-br from-rose-900/50 to-slate-900"></div>
+                            <div
+                                class="relative z-10 w-16 h-16 rounded-full bg-rose-500/20 border border-rose-400/30 flex items-center justify-center text-rose-400">
+                                <i aria-hidden="true" class="fas fa-gavel text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-display text-2xl font-bold text-white">Enchères App</h3>
+                                <span
+                                    class="px-2 py-1 bg-white/5 border border-white/10 text-slate-400 text-xs rounded flex items-center gap-1">
+                                    <i aria-hidden="true" class="fas fa-users"></i> Équipe
+                                </span>
+                            </div>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                                Plateforme d'enchères en ligne développée en équipe (Projet "NullPointerException").
+                                Mise en place d'une architecture logicielle en couches strictes pour assurer la
+                                scalabilité et la maintenabilité. Gestion sécurisée des utilisateurs et des
+                                transactions.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5">
+                                <span class="text-xs font-semibold text-rose-400">Java Spring Boot</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-rose-400">SQL Server</span>
+                                <span class="text-xs text-slate-500" aria-hidden="true">•</span>
+                                <span class="text-xs font-semibold text-rose-400">MVC</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-navy-900 py-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span
+                    class="w-6 h-6 rounded bg-gradient-to-br from-primary-500 to-secondary-400 flex items-center justify-center text-[10px] font-bold text-white">AF</span>
+                <span class="font-display text-white font-medium text-sm">Antoine Ferron</span>
+            </div>
+
+            <div class="flex items-center gap-6 text-sm text-slate-400">
+                <span class="flex items-center gap-2"><i aria-hidden="true" class="fas fa-map-marker-alt"></i> Rennes,
+                    Bretagne</span>
+                <a href="mailto:antoine.ferron2023@campus-eni.fr"
+                    class="hover:text-primary-400 transition-colors flex items-center gap-2">
+                    <i aria-hidden="true" class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+
+            <p class="text-slate-400 text-sm">
+                &copy; <span id="year"></span> Antoine Ferron. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+            (function () {
+                'use strict';
+
+                // ---------------------------------------------------------- Année
+                var yearEl = document.getElementById('year');
+                if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+                // ------------------------------------------------- Menu mobile
+                var btn = document.getElementById('mobile-menu-btn');
+                var menu = document.getElementById('mobile-menu');
+
+                if (btn && menu) {
+                    var icon = btn.querySelector('i');
+                    var mobileLinks = menu.querySelectorAll('.mobile-link');
+
+                    function setMenu(open) {
+                        menu.classList.toggle('hidden', !open);
+                        btn.setAttribute('aria-expanded', String(open));
+                        btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+                        if (icon) {
+                            icon.classList.toggle('fa-bars', !open);
+                            icon.classList.toggle('fa-times', open);
+                        }
+                    }
+
+                    function isOpen() {
+                        return !menu.classList.contains('hidden');
+                    }
+
+                    btn.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        setMenu(!isOpen());
+                    });
+
+                    Array.prototype.forEach.call(mobileLinks, function (link) {
+                        link.addEventListener('click', function () { setMenu(false); });
+                    });
+
+                    // Fermeture avec Échap
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape' && isOpen()) {
+                            setMenu(false);
+                            btn.focus();
+                        }
+                    });
+
+                    // Fermeture au clic à l'extérieur
+                    document.addEventListener('click', function (e) {
+                        if (isOpen() && !menu.contains(e.target) && e.target !== btn) {
+                            setMenu(false);
+                        }
+                    });
+
+                    // Retour en desktop : on réinitialise l'état
+                    window.matchMedia('(min-width: 768px)').addEventListener('change', function (e) {
+                        if (e.matches) setMenu(false);
+                    });
+                }
+
+                // ------------------------------------- Navbar : effet au scroll
+                var navbar = document.getElementById('navbar');
+
+                if (navbar) {
+                    var ticking = false;
+
+                    function updateNavbar() {
+                        var scrolled = window.scrollY > 20;
+                        navbar.classList.toggle('shadow-lg', scrolled);
+                        navbar.style.background = scrolled
+                            ? 'rgba(5, 8, 16, 0.9)'
+                            : 'rgba(15, 23, 42, 0.6)';
+                        ticking = false;
+                    }
+
+                    window.addEventListener('scroll', function () {
+                        if (!ticking) {
+                            window.requestAnimationFrame(updateNavbar);
+                            ticking = true;
+                        }
+                    }, { passive: true });
+
+                    // État initial : indispensable si la page est rechargée en cours de défilement
+                    updateNavbar();
+                }
+
+                // ------------------------------- Apparition au défilement (reveal)
+                var revealElements = document.querySelectorAll('.reveal');
+                var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                if (!('IntersectionObserver' in window) || reduceMotion) {
+                    // Repli : tout est affiché immédiatement
+                    Array.prototype.forEach.call(revealElements, function (el) {
+                        el.classList.add('active');
+                    });
+                } else {
+                    var revealOnScroll = new IntersectionObserver(function (entries, observer) {
+                        entries.forEach(function (entry) {
+                            if (!entry.isIntersecting) return;
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        });
+                    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+                    Array.prototype.forEach.call(revealElements, function (el) {
+                        revealOnScroll.observe(el);
+                    });
+                }
+            })();
+    </script>
 </body>
+
 </html>
